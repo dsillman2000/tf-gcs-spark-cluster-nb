@@ -18,12 +18,12 @@ resource "google_dataproc_cluster" "dataproc_cluster" {
 
     master_config {
       num_instances = 1
-      machine_type  = "n1-standard-1"
+      machine_type  = var.gcp_dataproc_master_machine_type
     }
 
     worker_config {
-      num_instances = 2
-      machine_type  = "n1-standard-1"
+      num_instances = var.gcp_dataproc_worker_count
+      machine_type  = var.gcp_dataproc_worker_machine_type
     }
 
     endpoint_config {
@@ -31,8 +31,8 @@ resource "google_dataproc_cluster" "dataproc_cluster" {
     }
 
     software_config {
-      image_version       = "1.4"
-      optional_components = ["ANACONDA", "JUPYTER"]
+      image_version       = var.gcp_dataproc_image_version
+      optional_components = ["JUPYTER"]
     }
   }
 }
