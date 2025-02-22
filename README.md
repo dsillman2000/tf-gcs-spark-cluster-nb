@@ -29,9 +29,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_gcp_project_id"></a> [gcp\_project\_id](#input\_gcp\_project\_id) | The GCP project ID to create the bucket in. | `string` | n/a | yes |
-| <a name="input_gcp_region"></a> [gcp\_region](#input\_gcp\_region) | The GCP region to create the bucket in. | `string` | `"us-east1"` | no |
-| <a name="input_gcs_bucket_name"></a> [gcs\_bucket\_name](#input\_gcs\_bucket\_name) | The name of the GCS bucket to create. | `string` | `"gcp-spark-storage-bucket"` | no |
+| <a name="input_gcp_project_id"></a> [gcp\_project\_id](#input\_gcp\_project\_id) | The GCP project ID to create the bucket and Dataproc cluster in. Must already be created. | `string` | n/a | yes |
+| <a name="input_gcp_region"></a> [gcp\_region](#input\_gcp\_region) | The GCP region to create the bucket and Dataproc cluster in. | `string` | `"us-east1"` | no |
+| <a name="input_gcs_bucket_name"></a> [gcs\_bucket\_name](#input\_gcs\_bucket\_name) | The name of the GCS bucket to create to use for the underlying Dataproc Hadoop storage. | `string` | `"gcp-spark-storage-bucket"` | no |
 
 ## Outputs
 
