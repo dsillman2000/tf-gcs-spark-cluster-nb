@@ -35,5 +35,9 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_gcp_dataproc_cluster_id"></a> [gcp\_dataproc\_cluster\_id](#output\_gcp\_dataproc\_cluster\_id) | The ID of the Dataproc cluster. |
+| <a name="output_gcp_dataproc_cluster_name"></a> [gcp\_dataproc\_cluster\_name](#output\_gcp\_dataproc\_cluster\_name) | The name of the Dataproc cluster. |
+| <a name="output_gcs_bucket_name"></a> [gcs\_bucket\_name](#output\_gcs\_bucket\_name) | The name of the GCS bucket. |
 <!-- END_TF_DOCS -->
